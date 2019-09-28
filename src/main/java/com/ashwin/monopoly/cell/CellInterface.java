@@ -1,6 +1,8 @@
 package com.ashwin.monopoly.cell;
 
+import com.ashwin.monopoly.entity.Player;
+
 public interface CellInterface {
 
-    public Object performAction();
+    public void performAction(Player player);
 }

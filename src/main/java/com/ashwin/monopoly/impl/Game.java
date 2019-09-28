@@ -2,13 +2,13 @@ package com.ashwin.monopoly.impl;
 
 public class Game implements GameInterface {
 
-    @Override
-    public Integer rollDice() {
-        return null;
-    }
+//    @Override
+//    public Integer rollDice() {
+//        return null;
+//    }
 
     @Override
-    public String getStatus() {
+    public String getCellInfo() {
         return null;
     }
 

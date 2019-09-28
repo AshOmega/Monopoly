@@ -1,16 +1,10 @@
 package com.ashwin.monopoly.cell;
 
-import com.ashwin.monopoly.constants.MonopolyConstants;
+import com.ashwin.monopoly.entity.Player;
 
 public class Empty implements CellInterface {
 
-    private String name = MonopolyConstants.EMPTY;
-
-    public String getName() {
-        return name;
-    }
-
-    public Object performAction() {
-        return null;
+    public void performAction(Player player) {
+       
     }
 }

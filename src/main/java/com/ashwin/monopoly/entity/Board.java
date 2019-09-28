@@ -16,4 +16,7 @@ public class Board {
        boardCells = boardData.getCells();
    }
 
+    public List<CellInterface> getBoardCells() {
+        return boardCells;
+    }
 }

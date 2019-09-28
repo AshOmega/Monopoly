@@ -1,16 +1,22 @@
 package com.ashwin.monopoly.cell;
 
-import com.ashwin.monopoly.constants.MonopolyConstants;
+import com.ashwin.monopoly.entity.Player;
 
 public class Hotel implements CellInterface {
 
-    private String name = MonopolyConstants.HOTEL;
+    private Player owner =  null;
 
-    public String getName() {
-        return name;
-    }
+    public void performAction(Player player) {
 
-    public Object performAction() {
-        return null;
+        if(owner == null){
+            owner = player;
+            player.deductMoney(200.0);
+            player.addToPossessionList(this);
+        }
+        else
+        {
+            player.deductMoney(50.0);
+            owner.addMoney(50.0);
+        }
     }
 }
